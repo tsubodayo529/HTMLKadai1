@@ -1,0 +1,655 @@
+/* ここから下に記載していく */
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    background-color: black; 
+     color: white; 
+     /* background: url(); */
+}   
+
+
+/* h1は英語タイトル */
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* h2は日本語タイトル */
+h2{
+    font-size: 18px;
+}
+
+/* ここからheader編集部分 */
+
+.header1{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+}
+
+.imgbox{
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.header1 .imgbox img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.boxheader{
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boxheader p{
+    margin: 0 25px;
+}
+
+/* ここまでheader編集部分 */
+
+
+
+/* ここからメインビジュアル画像 */
+
+.mainbg{
+    /* border: 5px red solid; */
+    background: url(../img/mainbg_01.png);
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: contain;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: image_anime 8s ease infinite;
+}
+
+/* スライドショーアニメーション */
+@keyframes image_anime {
+    0% {
+      background-image: url(../img/mainbg_01.png); /* 背景画像1を指定 */
+    }
+    
+    33% {
+        background-image: url(../img/mainbg_03.png); /* 背景画像1を指定 */
+      }
+
+    66% {
+      background-image: url(../img/mainbg_02.png); /* 背景画像1を指定 */
+    }
+
+    100% {
+        background-image: url(../img/mainbg_01.png); /* 背景画像1を指定 */
+      }
+  }
+
+.mainbgp1{
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.mainbgp2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* ここまでメインビジュアル */
+
+
+
+/* About部分の記述 */
+/* テキスト */
+.about h1{
+    color: red;
+    margin-bottom: 30px;
+}
+
+.about{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.about h2{
+    margin-bottom: 40px;
+}
+
+.about p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* 画像 */
+.imgboxes .imgbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.imgboxes .imgbox{
+    width: 300px;
+    height: 250px;
+}
+
+.imgboxes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+/* ここまでAbout部分 */
+
+
+
+/* ここからカリキュラム部分 */
+/* テキスト */
+.curriculum h1{
+    margin-top: 60px;
+}
+
+.curriculum p{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* c1は画像とテキストを包むクラス */
+.c1{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* 画像部分 */
+.c1imgbox{
+    width: 600px;
+    height: 450px;
+}
+
+.c1 .c1imgbox img{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* テキスト部分 */
+.c1box{
+    width: 600px;
+    height: 450px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.c1title1{
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    
+}
+
+.c1text1{
+    width: 450px;
+    height: auto;
+    /* text-align: center; */
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+/* h2はTEST部分で使用 */
+.c1text1 h2{
+    margin-bottom: 20px;
+}
+
+
+/* c2は画像右寄せ」 */
+.c2{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.c2imgbox{
+    width: 600px;
+    height: 450px;
+}
+
+.c2 .c2imgbox img{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.c2box{
+    width: 600px;
+    height: 450px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.c2text1{
+    width: 450px;
+    height: auto;
+    /* text-align: center; */
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+
+.c2title1{
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+}
+/* ここまでカリキュラム部分 */
+
+
+
+/* ここからテスト部分 */
+.test{
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+.test h1{
+    color: red;
+    margin-bottom: 30px;
+}
+
+.test p{
+    margin-bottom: 30px;
+}
+
+.test .testbox {
+    width: 960px;
+    height: auto;
+    /* border: royalblue 5px solid; */
+    margin: 60px auto 60px ;
+    display: flex;
+    justify-content:space-between   
+}
+
+/* hoverすると透明になる */
+.testbox .box:hover{
+        opacity: 0.5;
+    }
+
+.test .boximg{
+    width: 300px;
+    height: 350px;
+}
+
+.test .boximg img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.test .textbox{
+    width: 300px;
+    height: 100px;
+    padding-top: 50px;
+}
+/* ここまでテスト */
+
+
+
+/* ここからテストリザルト */
+/* 失敗した場合 */
+.result1 {
+        margin-top: 800px;
+        margin-bottom: 30px;
+    }
+
+.rbg1{
+    height: 400px;
+    width: 100%;
+    /* border: 3px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../img/mainbg_01.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: contain;
+    animation: image_anime 8s ease infinite;
+    }
+
+.rbg1 .rtitle1{
+    font-size: 65px;
+    width: 100%;
+    height: 65px;
+    font-weight: bold;
+    color: blue;
+}
+
+.rbg1 p{
+    font-size: 24px;
+    line-height: 40px;
+}
+
+/* 再挑戦ボタン */
+.bottun{
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    border: white 2px solid;
+    box-shadow: 0 5px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottun:hover{
+    box-shadow: none;
+    transform: translate(0, 5px);
+}
+
+
+/* 成功した場合 */
+.result2 {
+    margin-top: 300px;
+    margin-bottom: 30px;
+}
+
+
+.rbg2{
+    height: 400px;
+    width: 100%;
+    /* border: 3px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    background: url(../img/money_ani_01.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: repeat;
+    animation: money_anime 8s ease infinite;
+    }
+
+.rbg2 .rtitle2{
+    font-size: 65px;
+    width: 100%;
+    height: 65px;
+    font-weight: bold;
+    color: red;
+}
+
+.rbg2 p{
+    font-size: 24px;
+    line-height: 40px;
+}
+
+
+/* 成功用お金が降ってくるアニメーション */
+@keyframes money_anime {
+    0% {
+      background-image: url(../img/money_ani_01.png); /* 背景画像1を指定 */
+    }
+    
+    8% {
+        background-image: url(../img/money_ani_02.png); /* 背景画像1を指定 */
+      }
+
+      16% {
+        background-image: url(../img/money_ani_03.png); /* 背景画像1を指定 */
+      }
+
+      24% {
+        background-image: url(../img/money_ani_04.png); /* 背景画像1を指定 */
+      }
+
+      32% {
+        background-image: url(../img/money_ani_05.png); /* 背景画像1を指定 */
+      }
+
+      40% {
+        background-image: url(../img/money_ani_06.png); /* 背景画像1を指定 */
+      }
+
+      48% {
+        background-image: url(../img/money_ani_07.png); /* 背景画像1を指定 */
+      }
+
+      56% {
+        background-image: url(../img/money_ani_08.png); /* 背景画像1を指定 */
+      }
+
+      64% {
+        background-image: url(../img/money_ani_09.png); /* 背景画像1を指定 */
+        }
+
+     72% {
+        background-image: url(../img/money_ani_10.png); /* 背景画像1を指定 */
+    }
+
+    80% {
+        background-image: url(../img/money_ani_11.png); /* 背景画像1を指定 */
+    }
+
+    88% {
+        background-image: url(../img/money_ani_12.png); /* 背景画像1を指定 */
+    }
+
+    100%{
+        background-image: url(../img/money_ani_01.png);
+    }
+
+}
+/* ここまでリザルト */
+
+
+
+/* ここから入校フォーム */
+.contactbox{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px white solid;
+    padding-top: 60px;
+}
+
+.contactbox h1{
+    color: red;
+}
+
+
+.contactbox .p1{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.contactbox .p3{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+/* 入力フォーム */
+.form-table{
+    width: auto;
+    height: auto;
+    margin: 0 auto 30px;
+    /* border: solid 3px #bfbfbf; */
+    
+}
+
+.form-table th{
+    width: 240px;
+    height: auto;
+    vertical-align: middle;
+    border-top:1px #bfbfbf solid;
+    border-bottom:1px #bfbfbf solid;
+    border-right:1px #bfbfbf solid;
+    padding: 0 64px 0 16px;
+}
+
+.form-table td{
+    width: 420px;
+    height: auto;
+    vertical-align: middle;
+    border-top:1px #bfbfbf solid;
+    border-bottom:1px #bfbfbf solid;
+    padding: 8px 0 8px 8px;
+}
+
+.form-table td .input{
+    width: 328px;
+    height: 36px;
+    /* padding: 8px; */
+}
+
+.name1{
+    width: 328px;
+    height: 36px;
+}
+
+.option4 select{
+    width: 328px;
+    height: 36px;
+    
+}
+
+.choice1{
+    margin-bottom: 24px;
+}
+
+textarea{
+    width: 328px;
+    height: auto;
+}
+
+/* 送信ボタン */
+.button1{
+    width: 300px;
+    height: 60px;
+    background-color: black;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 0 5px;
+    border: 2px white solid;
+    /* margin-bottom: 60px; */
+}
+
+.button1:hover {
+    box-shadow: none;
+    transform: translate(0, 5px);
+    }
+
+.buttontext1{
+    color: white;
+    font-size: 18px;
+}
+/* ここまで入力フォーム */
+
+
+
+
+
+/* ここから学校情報 */
+.access{
+    width: 1200px;
+    height: auto;
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+.companyinfo{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.mapbox{
+    width: 100%;
+    height: 250px;
+    /* border: 5px blue solid; */
+}
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.schoolinfo{
+    margin: 0 auto;
+    width: 550px;
+    height: 100%;
+}
+
+table{
+    height: 50px;
+    width: 600px;
+    text-align: left;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+    empty-cells: show;
+    vertical-align: middle;
+    line-height: 30px;
+    /* margin-left: 140px; */
+}
+th{
+    height: 50px;
+    vertical-align: middle;
+    width: 100px;
+}
+/* ここまで学校情報 */
+
+
+
+/* ここからフッター */
+.ftbg{
+    background-color: #707070;
+    width: 100%;
+    height: auto;
+    margin-top: 140px;
+    padding: 30px 0;
+    color: white;
+}
